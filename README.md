@@ -1,4 +1,4 @@
-# BAGHETWIN — Industrial Digital Twin Platform (Baghewala Heavy Oil Field
+# BAGHETWIN — Industrial Digital Twin Platform (Baghewala Heavy Oil Field)
 
 Smart Monitoring, Prediction and Optimization for Heavy Oil Fields
 
