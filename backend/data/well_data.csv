@@ -1,0 +1,36 @@
+well_id,production_rate,watercut,pressure_bar,temperature_c,oil_viscosity_cp,reservoir_condition,operating_stage,status,is_demonstration,data_source
+BGW-001,42,31,18,62,1850,Heavy oil / low mobility,Production,Operational,False,Field Baseline
+BGW-002,38,35,17,61,2010,Cooling / high viscosity,Production,Operational,False,Field Baseline
+BGW-003,46,28,20,64,1710,Thermally stimulated,Production,Operational,False,Field Baseline
+BGW-004,41,32,18,63,1820,Cyclic steam stimulated,Production,Operational,True,Demonstration Record
+BGW-005,35,36,17,59,2150,Heavy oil / low mobility,Production,Operational,True,Demonstration Record
+BGW-006,48,27,21,65,1680,Thermally stimulated,Production,Operational,True,Demonstration Record
+BGW-007,39,34,18,60,1980,Cooling / high viscosity,Production,Operational,True,Demonstration Record
+BGW-008,44,29,19,63,1760,Cyclic steam stimulated,Production,Operational,True,Demonstration Record
+BGW-009,37,37,16,58,2210,Heavy oil / low mobility,Production,Operational,True,Demonstration Record
+BGW-010,50,26,22,66,1620,Thermally stimulated,Production,Operational,True,Demonstration Record
+BGW-011,43,30,19,62,1840,Cyclic steam stimulated,Production,Operational,True,Demonstration Record
+BGW-012,36,38,17,59,2180,Cooling / high viscosity,Production,Operational,True,Demonstration Record
+BGW-013,47,28,20,64,1720,Thermally stimulated,Production,Operational,True,Demonstration Record
+BGW-014,40,33,18,61,1920,Cyclic steam stimulated,Production,Operational,True,Demonstration Record
+BGW-015,34,39,16,57,2280,Heavy oil / low mobility,Production,Operational,True,Demonstration Record
+BGW-016,49,27,21,66,1640,Thermally stimulated,Production,Operational,True,Demonstration Record
+BGW-017,42,31,18,62,1860,Cyclic steam stimulated,Production,Operational,True,Demonstration Record
+BGW-018,38,35,17,60,2040,Cooling / high viscosity,Production,Operational,True,Demonstration Record
+BGW-019,45,29,20,64,1750,Thermally stimulated,Production,Operational,True,Demonstration Record
+BGW-020,41,32,18,61,1890,Cyclic steam stimulated,Production,Operational,True,Demonstration Record
+BGW-021,35,37,16,58,2240,Heavy oil / low mobility,Production,Operational,True,Demonstration Record
+BGW-022,51,25,22,67,1590,Thermally stimulated,Production,Operational,True,Demonstration Record
+BGW-023,44,30,19,63,1790,Cyclic steam stimulated,Production,Operational,True,Demonstration Record
+BGW-024,37,36,17,59,2120,Cooling / high viscosity,Production,Operational,True,Demonstration Record
+BGW-025,46,28,20,64,1730,Thermally stimulated,Production,Operational,True,Demonstration Record
+BGW-026,40,33,18,61,1940,Cyclic steam stimulated,Production,Operational,True,Demonstration Record
+BGW-027,33,40,16,57,2320,Heavy oil / low mobility,Production,Operational,True,Demonstration Record
+BGW-028,47,27,21,65,1670,Thermally stimulated,Production,Operational,True,Demonstration Record
+BGW-029,0,0,14,42,3200,Awaiting status confirmation,Awaiting Status Confirmation,Non-Operational,True,Demonstration Record
+BGW-030,0,0,14,41,3250,Awaiting status confirmation,Awaiting Status Confirmation,Non-Operational,True,Demonstration Record
+BGW-031,0,0,14,43,3180,Awaiting status confirmation,Awaiting Status Confirmation,Non-Operational,True,Demonstration Record
+BGW-032,0,0,14,40,3300,Awaiting status confirmation,Awaiting Status Confirmation,Non-Operational,True,Demonstration Record
+BGW-033,0,0,14,42,3220,Awaiting status confirmation,Awaiting Status Confirmation,Non-Operational,True,Demonstration Record
+BGW-034,0,0,14,41,3260,Awaiting status confirmation,Awaiting Status Confirmation,Non-Operational,True,Demonstration Record
+BGW-035,0,0,14,42,3210,Awaiting status confirmation,Awaiting Status Confirmation,Non-Operational,True,Demonstration Record

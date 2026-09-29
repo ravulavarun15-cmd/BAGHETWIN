@@ -1,0 +1,38 @@
+{
+  "dataset_rows": 6000,
+  "features": [
+    "phase_code",
+    "steam_rate_tph",
+    "steam_volume_t",
+    "injection_pressure_bar",
+    "soak_hours",
+    "temperature_c",
+    "pressure_bar",
+    "oil_viscosity_cp",
+    "water_cut_pct",
+    "oil_bopd",
+    "stroke_m",
+    "spm",
+    "vfd_hz",
+    "pump_efficiency_pct",
+    "rod_load_kn",
+    "fluid_level_m",
+    "energy_kwh",
+    "sor",
+    "rod_floating_risk",
+    "pump_failure_risk"
+  ],
+  "production_model": {
+    "mae": 0.1586,
+    "rmse": 0.335
+  },
+  "temperature_model": {
+    "mae": 0.0206,
+    "rmse": 0.0407
+  },
+  "energy_model": {
+    "mae": 0.044,
+    "rmse": 0.4062
+  },
+  "rod_risk_accuracy": 0.9992
+}

@@ -1,0 +1,16 @@
+well_id,cycle_no,date,steam_volume_t,injection_pressure_bar,soak_hours,production_cutoff_bopd,cum_oil_t,sor,status
+BGW-001,Cycle 1,2025-04-10,390,32,48,25,135,2.89,Completed
+BGW-001,Cycle 2,2025-08-22,410,31,52,27,138,2.97,Completed
+BGW-001,Cycle 3,2025-12-15,420,30,48,28,131,3.21,Completed
+BGW-001,Cycle 4,2026-04-05,395,29,46,29,122,3.24,Completed
+BGW-001,Cycle 5 (Current),2026-08-28,400,30,48,28,130,3.08,Active Production
+BGW-002,Cycle 1,2025-05-14,410,33,50,26,140,2.93,Completed
+BGW-002,Cycle 2,2025-09-19,425,32,54,27,142,2.99,Completed
+BGW-002,Cycle 3,2026-01-28,440,31,52,28,136,3.24,Completed
+BGW-002,Cycle 4,2026-05-30,420,30,48,29,125,3.36,Completed
+BGW-002,Cycle 5 (Current),2026-09-02,430,32,52,27,135,3.19,Active Production
+BGW-003,Cycle 1,2025-03-20,370,30,44,28,130,2.85,Completed
+BGW-003,Cycle 2,2025-07-25,385,29,46,29,132,2.92,Completed
+BGW-003,Cycle 3,2025-11-30,395,29,48,30,126,3.13,Completed
+BGW-003,Cycle 4,2026-03-22,380,28,42,30,118,3.22,Completed
+BGW-003,Cycle 5 (Current),2026-08-15,380,29,42,30,122,3.11,Active Production

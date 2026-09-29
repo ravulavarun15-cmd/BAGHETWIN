@@ -1,0 +1,291 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #f1f5f9;
+  background-color: #080d14;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #080d14;
+  overflow-x: hidden;
+  color: #f1f5f9;
+}
+
+/* =========================================================================
+   OIL & GAS / PETROLEUM DIGITAL TWIN DESIGN SYSTEM
+   - Backgrounds: Carbon Obsidian & Deep Petroleum Charcoal (#080d14, #0d141e)
+   - Primary Accent: Crude Oil Amber & Heavy Hydrocarbon Gold (#f59e0b, #fbbf24)
+   - Thermal & Flare: Superheated Steam & Flare Orange (#f97316, #ea580c)
+   - Wellhead Status: Oilfield Operational Green (#10b981)
+   ========================================================================= */
+
+/* Glassmorphism primitives - Petroleum Sheen */
+.glass {
+  background: rgba(14, 21, 30, 0.82);
+  border: 1px solid rgba(245, 158, 11, 0.14);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-panel {
+  background: rgba(11, 17, 24, 0.92);
+  border: 1px solid rgba(245, 158, 11, 0.22);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-card-hover {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s ease;
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-3px);
+  border-color: rgba(245, 158, 11, 0.45);
+  box-shadow: 0 20px 45px rgba(245, 158, 11, 0.12), 0 0 20px rgba(245, 158, 11, 0.08);
+}
+
+/* Oil Industry Gradient & Glow Accents */
+.gradient-text {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #f97316 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-text-gold {
+  background: linear-gradient(135deg, #fef08a 0%, #fbbf24 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-text-flare {
+  background: linear-gradient(135deg, #fb923c 0%, #f97316 50%, #dc2626 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grid-bg {
+  background-image: 
+    linear-gradient(rgba(245, 158, 11, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 158, 11, 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.grid-bg-dense {
+  background-image: 
+    linear-gradient(rgba(245, 158, 11, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 158, 11, 0.06) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Micro-animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulseAmberGlow {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 14px rgba(245, 158, 11, 0.65);
+  }
+  50% {
+    opacity: 0.55;
+    box-shadow: 0 0 5px rgba(245, 158, 11, 0.25);
+  }
+}
+
+@keyframes pulseEmerald {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.7);
+  }
+  50% {
+    opacity: 0.5;
+    box-shadow: 0 0 3px rgba(16, 185, 129, 0.2);
+  }
+}
+
+@keyframes pulseFlare {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 12px rgba(249, 115, 22, 0.7);
+  }
+  50% {
+    opacity: 0.6;
+    box-shadow: 0 0 4px rgba(249, 115, 22, 0.25);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.pulse-amber {
+  animation: pulseAmberGlow 2.2s infinite ease-in-out;
+}
+
+.pulse-emerald {
+  animation: pulseEmerald 2s infinite ease-in-out;
+}
+
+.pulse-flare {
+  animation: pulseFlare 2.2s infinite ease-in-out;
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.03) 25%, rgba(245, 158, 11, 0.08) 50%, rgba(255, 255, 255, 0.03) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite;
+}
+
+/* Custom interactive buttons with tactile feel */
+.btn-tactile {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.btn-tactile:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.12);
+}
+
+.btn-tactile:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+.btn-tactile:focus-visible {
+  outline: 2px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+/* Custom Scrollbar - Petroleum Dark */
+.scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: rgba(11, 17, 24, 0.6);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #23303d;
+  border-radius: 9999px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}
+
+/* Custom Cursor Styles - Crude Oil Gold Aura */
+.custom-cursor-outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  border: 1.5px solid rgba(245, 158, 11, 0.7);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease-out, height 0.2s ease-out, border-color 0.2s ease-out, background-color 0.2s ease-out;
+  z-index: 99999;
+  mix-blend-mode: screen;
+}
+
+.custom-cursor-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #fbbf24;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 100000;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.95);
+}
+
+.custom-cursor-hover {
+  width: 52px;
+  height: 52px;
+  border-color: rgba(251, 191, 36, 0.95);
+  background: rgba(245, 158, 11, 0.12);
+}
+
+.custom-cursor-active {
+  width: 28px;
+  height: 28px;
+  border-color: #f97316;
+  background: rgba(249, 115, 22, 0.28);
+}
+
+/* Accessibility: respect reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .custom-cursor-outer,
+  .custom-cursor-inner {
+    display: none !important;
+  }
+}
